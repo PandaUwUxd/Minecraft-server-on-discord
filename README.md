@@ -13,7 +13,7 @@ PiP install Presence
 
 En colsona/terminal:
 
-- python3 DiscordMC
+> python3 DiscordMC.py
 
 
 Para añadir un nuevo servidor necesitas hacer 3 cosas
