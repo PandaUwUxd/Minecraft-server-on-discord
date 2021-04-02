@@ -1,5 +1,10 @@
 # Minecraft-server-on-discord
 
+Antes que nada, necesitas crear una app en Discord
+
+https://discord.com/developers/applications
+
+
 Necesitas Python3 y PiP instalado
 
 PiP install Presence
