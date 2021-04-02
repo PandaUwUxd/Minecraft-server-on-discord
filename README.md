@@ -14,8 +14,9 @@ En colsona/terminal:
 Para añadir un nuevo servidor necesitas hacer 3 cosas
 
 - Añadir el dialogo que sale al presionar un boton
- 
-`<addr>` class NewServer(Gtk.Dialog):
+
+`
+ class NewServer(Gtk.Dialog):
  def __init__(self, parent):
         Gtk.Dialog.__init__(self, title="NewServer", transient_for=parent, flags=0)
         self.add_buttons(
@@ -27,16 +28,20 @@ Para añadir un nuevo servidor necesitas hacer 3 cosas
         box.add(label)
         self.show_all()
 
+`
 
 - Crear un nuevo boton
 
+`
         button = Gtk.Button.new_with_label("NewServer")
         button.connect("clicked", self.on_NewServer_clicked)
         hbox.pack_start(button, True, True, 0)
-        
+
+`
         
 - Añadir el nuevo boton a la interfaz
 
+`
     def on_NewServer_clicked(self, button):
         dialog = NewServer(self)
         start_time=time.time()
@@ -45,3 +50,5 @@ Para añadir un nuevo servidor necesitas hacer 3 cosas
         if response == Gtk.ResponseType.CLOSE:
             print(RPC.update(state="  ", details="  "))
         dialog.destroy()
+
+`
