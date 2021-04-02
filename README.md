@@ -1,5 +1,8 @@
 # Minecraft-server-on-discord
 
+![DiscordMC](https://raw.githubusercontent.com/PandaUwUxd/Minecraft-server-on-discord/main/Screenshots/Captura%20realizada%20el%202021-04-01%2020.12.56.png)
+
+
 Antes que nada, necesitas crear una app en Discord
 
 https://discord.com/developers/applications
