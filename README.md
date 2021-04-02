@@ -14,9 +14,9 @@ En colsona/terminal:
 Para añadir un nuevo servidor necesitas hacer 3 cosas
 
 - Añadir el dialogo que sale al presionar un boton
-
- class NewServer(Gtk.Dialog):
-    def __init__(self, parent):
+ 
+`<addr>` class NewServer(Gtk.Dialog):
+ def __init__(self, parent):
         Gtk.Dialog.__init__(self, title="NewServer", transient_for=parent, flags=0)
         self.add_buttons(
            Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE
